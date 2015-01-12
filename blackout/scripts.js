@@ -18,8 +18,8 @@ function place(coords, color){
   var clusterer = new ymaps.Clusterer({preset: 'islands#' + color + 'ClusterIcons'});
   var geoObjects = [];
   for (var i = 0; i<coords.length; i++) {
-    var dx=Math.floor(Math.random() * 5)/100000;
-    var dy=Math.floor(Math.random() * 5)/100000;
+    var dx=Math.floor(Math.random() * 2)/100000+0.00001;
+    var dy=Math.floor(Math.random() * 2)/100000+0.00001;
 
     if (Math.floor(Math.random() * 2) == 1 ) {
         dx=-dx
